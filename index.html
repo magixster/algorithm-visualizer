@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Algorithm Visualizer</title>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-dark bg-secondary">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">Algorithm Visualizer</a>
+                    </nav>
+                    </div>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div class="row canvas">                        
+                <div class="col col-lg-9 col-md-9 d-flex justify-content-center align-items-center" id="algo-visulaizer">
+                    <div><p>Enter how many integers to sort/search algorithm and click on <b>generate.</b></p></div>
+                </div>
+                <div class="col col-lg-3 col-md-3 controls inline">
+                    <span style="color: white; background-color: black; margin-left: 5px; font-size: large;">Swapped</span>
+                        <span style="color: white; background-color: #a3dd11;margin-left: 5px; font-size: large;">Not Swapped</span>
+                    <form onsubmit="runVisulization()">
+                        <div class="align-items-center">
+                            <div>
+                                <div class="pt-3">
+                                    <h5>Generate Numbers</h5>
+                                </div>
+                                <Row class="form-row align-items-center my-1">
+                                    <button type="button" class="btn btn-primary mx-2" onclick="setNumberCountAndDisplayBars();">Generate Random Number</button>
+                                </Row>
+                                <Row>
+                                    <div class="pt-3">
+                                        <div class="form-group my-1">
+                                            <h5>Select Algorithm</h5>
+                                    <Row>
+                                        <h6>Sorting</h6>
+                                    </Row>
+                                    <button type="button" class="btn btn-dark" onclick="bubbleSort();">Bubble Sort</button>
+                                    <button type="button" class="btn btn-dark" onclick="selectionSort();">Selection Sort</button>
+                                    <div class="dropdown-divider"></div>
+                                    <Row>
+                                        <h6>Searching</h6>
+                                    </Row>
+                                    <button disabled type="button" class="btn btn-dark" onclick="selectionSort();">Linear search</button>
+                                    <button disabled type="button" class="btn btn-dark" onclick="selectionSort();">Binary Search</button>
+
+                                            </div>
+                                        </div>
+                                </Row>
+                            </div>
+                        </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

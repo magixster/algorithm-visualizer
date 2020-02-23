@@ -1,0 +1,14 @@
+body {
+    background-color: #e1e1e1;
+}
+.canvas {
+    height: calc(100vh - 75px);
+}
+
+.controls {
+    background-color: #e1edaf;
+}
+
+.beingSwapped {
+    background-color: black;
+}
